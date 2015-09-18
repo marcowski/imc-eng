@@ -11,13 +11,20 @@ package imc;
  */
 public class Pessoa {
     private double peso;
-    private int altura;
+    private double altura;
     private String nome;
     private int idade;
     private String sexo;
     
-    
-    public double calculaIMC(int peso , int altura){
+    public Pessoa(){
+        this.peso = 0.0;
+        this.altura = 0.0;
+        this.nome = "";
+        this.idade = 0;
+        this.sexo = "";
+    }
+    public double calculaIMC(){
+        
         double imc = 0;
         
         imc = peso /(altura*altura);
@@ -50,4 +57,45 @@ public class Pessoa {
            return  ("Obesidade Grau 3 (Mórbida) ");
        
     }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+    public void setAltura(int altura) {
+        this.altura = altura;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+    
 }
