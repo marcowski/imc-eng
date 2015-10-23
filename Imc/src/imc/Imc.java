@@ -16,7 +16,7 @@ public class Imc {
      */
     public static void main(String[] args) {
         Pessoa p1 = new Pessoa();
-        p1.setPeso(225.3);
+        p1.setPeso(20.0);
         p1.setAltura(1.88);
         
         System.out.println(p1.chechaIMC(p1.calculaIMC()));
